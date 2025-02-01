@@ -57,11 +57,11 @@ local function ScannerStaticStart()
 	ScannerViewportFrame.Static1.ImageTransparency = 0
 	ScannerViewportFrame.Static2.ImageTransparency = 0
 
-	TweenService:Create(ScannerViewportFrame.Static1, TweenInfo.new(3, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {
+	TweenService:Create(ScannerViewportFrame.Static1, TweenInfo.new(1, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {
 		ImageTransparency = 1
 	}):Play()
 
-	TweenService:Create(ScannerViewportFrame.Static2, TweenInfo.new(3, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {
+	TweenService:Create(ScannerViewportFrame.Static2, TweenInfo.new(1, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {
 		ImageTransparency = 1
 	}):Play()
 
@@ -75,7 +75,7 @@ local function ScannerStaticStart()
     ScannerViewportFrame.Vignette.ImageTransparency = 0.6
 	ScannerCamera.FieldOfView = 1
 
-	TweenService:Create(ScannerCamera, TweenInfo.new(3, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {
+	TweenService:Create(ScannerCamera, TweenInfo.new(1, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {
 		FieldOfView = 30
 	}):Play()
 
