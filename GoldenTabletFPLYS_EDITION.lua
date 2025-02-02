@@ -75,7 +75,7 @@ local function ScannerStaticStart()
 		ImageTransparency = 1
 	}):Play()
 
-	TweenService:Create(ScannerViewportFrame.Vignette, TweenInfo.new(0.2, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut, 0, true), {
+	TweenService:Create(ScannerViewportFrame.Vignette, TweenInfo.new(1, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {
 		ImageTransparency = 0.4
 	}):Play()
 	
