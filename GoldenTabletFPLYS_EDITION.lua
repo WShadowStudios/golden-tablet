@@ -27,6 +27,8 @@ local player = game.Players.LocalPlayer
 
 local surfacelight = Instance.new("SurfaceLight")
 surfacelight.Parent = Handle
+surfacelight.Face = "Back"
+surfacelight.Shadows = true
 surfacelight.Enabled = false
 local showflv = false
 
