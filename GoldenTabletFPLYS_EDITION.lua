@@ -22,7 +22,12 @@ local ScannerActivateTickDelay = tick()
 local ScannerCamera = Instance.new("Camera")
 
 local TweenService = game:GetService("TweenService")
+local uis = game:GetService("UserInputService")
 local player = game.Players.LocalPlayer
+
+local surfacelight = Instance.new("SurfaceLight").Parent = Handle
+surfacelight.Enabled = false
+local showflv = false
 
 local LastScannedRoom = -1
 local CalculatedFPSWait = (1 / target_fps)
@@ -310,3 +315,16 @@ Scanner.Unequipped:Connect(function()
 	LoadedAnimations.equip:Stop()
 	LoadedAnimations.idle:Stop()
 end)
+
+uis.InputBegan:Connect(function(input)
+ if input.KeyCode == Enum.KeyCode.F then
+   if showflv == false then
+     surfacelight.Enabled = true
+     showflv = true
+    elseif showflv == true then
+     surfacelight.Enabled = false
+     showflv = false
+end
+end
+end)
+				
