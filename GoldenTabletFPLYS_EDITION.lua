@@ -54,6 +54,7 @@ local LoadedAnimations = {}
 local function ScannerStaticStart()
 	ScannerViewportFrame.OffScreen.Visible = false
 
+	ScannerViewportFrame.Vignette.ImageTransparency = 1
 	ScannerViewportFrame.Static1.ImageTransparency = 0
 	ScannerViewportFrame.Static2.ImageTransparency = 0
 
@@ -71,8 +72,11 @@ local function ScannerStaticStart()
 		ImageColor3 = Color3.fromRGB(53, 93, 52)
 	}):Play()
 
+	TweenService:Create(ScannerViewportFrame.Vignette, TweenInfo.new(0.2, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut, 10, true), {
+		ImageTransparency = 0.4
+	}):Play()
+
     ScannerViewportFrame.ViewNormal.ImageColor3 = Color3.fromRGB(255, 249, 0)
-    ScannerViewportFrame.Vignette.ImageTransparency = 0.4
 	ScannerCamera.FieldOfView = 1
 
 	TweenService:Create(ScannerCamera, TweenInfo.new(1, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {
