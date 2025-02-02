@@ -25,7 +25,8 @@ local TweenService = game:GetService("TweenService")
 local uis = game:GetService("UserInputService")
 local player = game.Players.LocalPlayer
 
-local surfacelight = Instance.new("SurfaceLight").Parent = Handle
+local surfacelight = Instance.new("SurfaceLight")
+surfacelight.Parent = Handle
 surfacelight.Enabled = false
 local showflv = false
 
