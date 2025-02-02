@@ -35,7 +35,7 @@ surfacelight.Enabled = false
 local showflv = false
 
 local LastScannedRoom = -1
-local CalculatedFPSWait = (1)
+local CalculatedFPSWait = (2)
 
 local IsScannerOpened = false
 local Equipped = false
