@@ -39,7 +39,8 @@ local ScannerObjectives = {
     "FuseObtain",
     "MinesAnchor",
     "WaterPump",
-    "TimerLever"
+    "TimerLever",
+    "SpawnPile"
 }
 
 local StaticImageUrl = {
