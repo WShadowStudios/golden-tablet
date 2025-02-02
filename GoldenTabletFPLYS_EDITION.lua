@@ -6,7 +6,7 @@ local Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/Reg
 
 
 
-local Scanner = LoadCustomInstance("https://raw.githubusercontent.com/WShadowStudios/golden-tablet/main/golden%20tablet%20fplys%20editionv5.rbxm")
+local Scanner = LoadCustomInstance("https://raw.githubusercontent.com/WShadowStudios/golden-tablet/main/golden%20tablet%20fplys%20editionv6.rbxm")
 Scanner.Parent = game.Players.LocalPlayer.Backpack
 
 local target_fps = _G.scanner_fps or 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
