@@ -40,7 +40,7 @@ local ScannerObjectives = {
     "MinesAnchor",
     "WaterPump",
     "TimerLever",
-    "GoldPile"
+    "LootHolder"
 }
 
 local StaticImageUrl = {
