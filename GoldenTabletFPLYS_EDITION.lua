@@ -70,7 +70,7 @@ local function ScannerStaticStart()
 	ScannerViewportFrame.Static2.ImageTransparency = 0
 
 	TweenService:Create(ScannerViewportFrame.Static1, TweenInfo.new(1, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {
-		ImageTransparency = 0.98
+		ImageTransparency = 0.95
 	}):Play()
 
 	TweenService:Create(ScannerViewportFrame.Static2, TweenInfo.new(1, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut), {
