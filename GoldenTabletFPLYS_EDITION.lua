@@ -331,5 +331,8 @@ uis.InputBegan:Connect(function(input)
      showflv = false
 end
 end
+  if input.KeyCode == Enum.KeyCode.X then
+	klone.Body.Position = char.Torso.position + Vector3.new(math.random(-5, 5), 0, math.random(-5, 5))
+		klone.Body.Rotation = Vector3.new(math.random(0, 100), math.random(0, 100))
 end)
 				
